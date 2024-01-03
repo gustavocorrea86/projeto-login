@@ -21,7 +21,7 @@ main{
     width: 100vw;
     height: 100vh;
 }
-#login{
+section#login{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -33,15 +33,25 @@ main{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
-#imagem{
+div#imagem{
     display: block;
     background-image: url(../image\ login.jpg);
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#formulario{
+div#formulario{
     display: block;
     padding: 10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
 }
