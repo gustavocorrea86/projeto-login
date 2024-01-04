@@ -21,18 +21,21 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
                 <form action="login.php" method="post">
+
                     <div class="campo">
                         <span class="material-symbols-outlined">person</span>
                         <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin"></label>
                     </div>
+
                     <div class="campo">
                         <span class="material-symbols-outlined">vpn_key</span>
                         <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="6" maxlength="8">
                         <label for="isenha"></label>
                     </div>
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html">Esqueci a Senha<span class="material-symbols-outlined">mail</span></a>
+
+                    <input id="entrar" type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a Senha<span id="icon_mail"  class="material-symbols-outlined">mail</span></a>
 
                 </form>
 
